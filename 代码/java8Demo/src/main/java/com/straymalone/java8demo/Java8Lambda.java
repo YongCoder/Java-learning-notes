@@ -55,12 +55,15 @@ public class Java8Lambda {
 
     @Test
     public void test6() {
-        BinaryOperator<Long> addLongs = (x, y) -> x + y;
+        BinaryOperator<Long> addLongs = (x, y) -> x + y; // 去掉<Long>会报错哦
         // 调用方法
         System.out.println(addLongs.apply(2L, 3L));
     }
 
+    @FunctionalInterface
     interface Greeting {
         String sayHello(String name);
+
+//        String sayHello1(String name); // 去除注释会报错Multiple non-overriding abstract methods found in interface com.straymalone.java8demo.Java8Lambda.Greeting
     }
 }
