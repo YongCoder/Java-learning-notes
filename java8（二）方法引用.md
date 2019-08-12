@@ -28,7 +28,7 @@ test1是 Lambda 表达式写法，通过调用 println 方法输出 content。te
 
 ## 语法
 
-这里把方法引用分为4种
+这里把方法引用分为5种
 
 1.静态方法引用：ClassName::staticMethod
 
